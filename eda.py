@@ -16,7 +16,7 @@ ___
 
 with st.sidebar.header("1. Upload your CSV or Excel data"):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV or Excel file", type=['csv','xlsx'])
-    st.sidebar.markdown('[Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)')
+    st.sidebar.markdown('[Example CSV input file](https://raw.githubusercontent.com/ldruizsan/eda-app/main/delaney_solubility_with_descriptors.csv)')
 
 if uploaded_file is not None:
     @st.cache
