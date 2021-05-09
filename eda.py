@@ -9,7 +9,7 @@ st.markdown('''
 
 This is an **EDA App** created in Streamlit using pandas-profiling library
 
-**Credit:** App built in 'Python' + 'Streamlit by Chanin Nantasenamat aka the Data Professor
+**Credit:** App built in 'Python' + 'Streamlit' by Chanin Nantasenamat aka the Data Professor
 
 ___
 ''')
