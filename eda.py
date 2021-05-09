@@ -14,8 +14,8 @@ This is an **EDA App** created in Streamlit using pandas-profiling library
 ___
 ''')
 
-with st.sidebar.header("1. Upload your CSV or Excel data"):
-    uploaded_file = st.sidebar.file_uploader("Upload your input CSV or Excel file", type=['csv','xlsx'])
+with st.sidebar.header("1. Upload your CSV data"):
+    uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=['csv'])
     st.sidebar.markdown('[Example CSV input file](https://raw.githubusercontent.com/ldruizsan/eda-app/main/delaney_solubility_with_descriptors.csv)')
 
 if uploaded_file is not None:
@@ -23,11 +23,6 @@ if uploaded_file is not None:
     def load_csv():
         csv = pd.read_csv(uploaded_file)
         return csv
-    
-    @st.cache
-    def load_excel():
-        excel = pd.read_excel(uploaded_file)
-        return excel
 
     df = load_csv()
     pr = ProfileReport(df, explorative=True)
