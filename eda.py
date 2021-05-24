@@ -42,7 +42,7 @@ else:
         df = load_data()
         pr = ProfileReport(df, explorative=True)
         st.header('**Input DataFrame**')
-        st.write(df)
+        st.write(df.head(10))
         st.write('---')
         st.header('**Pandas Profiling Report**')
         st_profile_report(pr)
